@@ -35,3 +35,16 @@ def connect_db(host, user, password, name_db=None):
         )
 
     return my_db
+
+
+def cabecalho():
+    """
+    Função para formatar um cabeçalho para o programa.
+    :return: string
+    """
+    texto = "Controle Financeiro - MySQL DB"
+    print(f'{"=" * len(texto) + 10 * "="}')
+    print(f'{"*" * len(texto) + 10 * "*"}')
+    print(f"++++ {texto} ++++")
+    print(f'{"*" * len(texto) + 10 * "*"}')
+    print(f'{"=" * len(texto) + 10 * "="}')
